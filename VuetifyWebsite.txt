@@ -1,0 +1,9 @@
+[Vuetify Icon]
+https://materialdesignicons.com/
+
+[Vuetify transition animation]
+https://vuejs.org/guide/built-ins/transition.html
+https://vuejs.org/guide/extras/animation.html
+
+[Vuetify official website]
+https://vuetifyjs.com/en/
