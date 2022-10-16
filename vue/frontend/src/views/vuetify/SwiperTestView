@@ -1,0 +1,49 @@
+<template>
+  <div class="slide-3d">
+    <v-carousel :cycle="cycle" :interval="interval" :height="height" v-model="model">
+      <v-carousel-item
+          v-for="(color, i) in colors"
+          :key="i">
+
+        <v-sheet
+            :color="color"
+            :height="height"
+            tile>
+
+          <v-row
+              class="fill-height"
+              align="center"
+              justify="center">
+
+            <div class="text-h2">
+              <v-img :src="require('@/assets/img/t1logo.png')" :height="height" contain></v-img>
+            </div>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "SwiperTestView",
+  data: () => ({
+    model: 0,
+    colors: [ //배경 컬러 설정
+      'primary',
+      'secondary',
+      'yellow',
+      'red',
+      'purple',
+      'orange',
+    ],
+    cycle: true, //자동으로 넘어가게 하는 거
+    interval: 3000, // 넘어가는 시간 설정 : 3000이면 3초
+    height: 500, //높이 설정
+  }),
+}
+</script>
+
+<style scoped>
+</style>
