@@ -126,7 +126,7 @@ export default {
         }
       }
     },
-    callDaumAddressApi () {
+    callDaumAddressApi ()
       new window.daum.Postcode({
         oncomplete: (data) => {
           let fullRoadAddr = data.roadAddress;
